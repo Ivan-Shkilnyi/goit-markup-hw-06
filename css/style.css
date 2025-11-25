@@ -543,7 +543,8 @@ p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
-    margin-bottom: 0;
+    margin-bottom: 16px;
+    text-align: center;
 }
 
 .subscribe-input {
@@ -558,20 +559,18 @@ p {
     letter-spacing: 0.04em;
     color: #fff;
     padding-left: 16px;
-    margin-bottom: 16px;
 }
 
 .subscribe-button {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
     border: none;
     padding: 8px 24px;
     min-width: 165px;
     height: 40px;
     background-color: #4d5ae5;
-    cursor: pointer;
 
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -582,11 +581,12 @@ p {
     color: #fff;
 }
 
-.subscribe {
+.subscribe-form {
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: center;
+    justify-content: center;
 }
 
 .icon-send {
