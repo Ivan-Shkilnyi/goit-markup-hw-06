@@ -243,7 +243,9 @@ p {
     margin-bottom: auto;
 }
 
-.nav-list-mob {}
+.contacts-item {
+    margin-bottom: 24px;
+}
 
 .nav-items-mob {
     font-weight: 700;
@@ -251,6 +253,34 @@ p {
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: #404bbf;
+    margin-bottom: 40px;
+}
+
+.contacts-phone-mob {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #4d5ae5;
+    font-style: normal;
+
+}
+
+.contacts-link-mob {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    font-style: normal;
+}
+
+.mobile-link-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
 @media screen and (min-width: 768px) {
