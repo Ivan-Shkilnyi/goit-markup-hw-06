@@ -199,7 +199,7 @@ p {
     }
 }
 
-/* mobile menu */
+/* Mobile menu */
 
 .mobile-menu {
     position: fixed;
@@ -241,6 +241,16 @@ p {
 
 .mobile-menu-nav {
     margin-bottom: auto;
+}
+
+.nav-list-mob {}
+
+.nav-items-mob {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #404bbf;
 }
 
 @media screen and (min-width: 768px) {
@@ -501,6 +511,13 @@ p {
     background-color: #2e2f42;
 }
 
+.social-link-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo-footer {
     display: block;
     margin-bottom: 16px;
@@ -571,8 +588,6 @@ p {
     min-width: 165px;
     height: 40px;
     background-color: #4d5ae5;
-
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
