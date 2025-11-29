@@ -379,7 +379,7 @@ p {
 
 .principles-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 72px;
 }
 
@@ -396,6 +396,7 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .principles-text {
@@ -409,6 +410,25 @@ p {
 .our-principles {
   margin-bottom: 96px;
 }
+
+@media screen and (min-width: 768px) {
+  .principles-list {
+    display: flex;
+    gap: 24px;
+    row-gap: 72px;
+  }
+
+  .principles-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .principles-title {
+    text-align: left;
+  }
+
+}
+
+
 
 /* #endregion our principles */
 
