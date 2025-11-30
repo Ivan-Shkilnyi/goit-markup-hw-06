@@ -370,8 +370,30 @@ p {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 1157px) {
+  .baner {
+    max-width: 1440px;
+    padding: 188px 0;
+  }
 
+  .main-title {
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+  }
+
+  .order-service-button:hover,
+  .order-service-button:focus {
+    background-color: #404bbf;
+
+  }
+}
 
 /* #endregion baner */
 
@@ -424,9 +446,13 @@ p {
   .principles-title {
     text-align: left;
   }
-
 }
 
+@media screen and (min-width: 1157px) {
+  .social-link-box {
+    justify-content: space-between
+  }
+}
 
 
 /* #endregion our principles */
@@ -532,7 +558,7 @@ p {
     justify-content: center;
   }
 
-  .team-item {}
+
 }
 
 /* #endregion our team */
