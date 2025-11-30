@@ -253,6 +253,17 @@ p {
   right: 24px;
 }
 
+.burger-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.burger-icon {
+  display: block;
+  fill: #2f2f37;
+}
+
 .mobile-menu-nav {
   margin-bottom: auto;
 }
