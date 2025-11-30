@@ -52,18 +52,22 @@
 
     <div class="mobile-menu">
       <div class="container mobile-menu-container">
-        <button class="mobile-menu-close" data-menu-close>Close</button>
+        <button class="mobile-menu-close">
+          <svg class="mobile-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
 
         <nav class="mobile-menu-nav">
           <ul class="nav-list-mob">
             <li class="nav-items-mob">
-              <a class="nav-link current" href="./index.html">Studio</a>
+              <a class="nav-link-mob current" href="./index.html">Studio</a>
             </li>
             <li class="nav-items-mob">
-              <a class="nav-link" href="">Portfolio</a>
+              <a class="nav-link-mob" href="">Portfolio</a>
             </li>
             <li class="nav-items-mob">
-              <a class="nav-link" href="">Contacts</a>
+              <a class="nav-link-mob" href="">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -193,7 +197,12 @@
         <h2 class="team-main-title">Our Team</h2>
         <ul class="team-list">
           <li class="team-item">
-            <img src="./images/product-designer.jpg" alt="product-designers-photo" width="264" />
+
+            <img src="
+            ./images/product-designer.jpg" srcset="
+            ./images/product-designer.jpg 1x,
+            ./images/product-designer@2x.jpg 2x" alt="product-designers-photo">
+
             <div class="team-item-info">
               <h3 class="team-title">Mark Guerrero</h3>
               <p class="team-text">Product Designer</p>
@@ -230,7 +239,12 @@
             </div>
           </li>
           <li class="team-item">
-            <img src="./images/frontend-developer.jpg" alt="frontend-developers-photo" width="264" />
+
+            <img src="
+            ./images/frontend-developer.jpg" srcset="
+            ./images/frontend-developer.jpg 1x,
+            ./images/frontend-developer@2x.jpg 2x" alt="frontend-developers-photo">
+
             <div class="team-item-info">
               <h3 class="team-title">Tom Ford</h3>
               <p class="team-text">Frontend Developer</p>
@@ -267,7 +281,12 @@
             </div>
           </li>
           <li class="team-item">
-            <img src="./images/marketing.jpg" alt="marketings-photo" width="264" />
+
+            <img src="
+            ./images/marketing.jpg" srcset="
+            ./images/marketing.jpg 1x,
+            ./images/marketing@2x.jpg 2x" alt="marketings-photo">
+
             <div class="team-item-info">
               <h3 class="team-title">Camila Garcia</h3>
               <p class="team-text">Marketing</p>
@@ -304,7 +323,12 @@
             </div>
           </li>
           <li class="team-item">
-            <img src="./images/ui-designer.jpg" alt="ui-designers-photo" width="264" />
+
+            <img src="
+            ./images/ui-designer.jpg" srcset="
+            ./images/ui-designer.jpg 1x,
+            ./images/ui-designer@2x.jpg 2x" alt="ui-designers-photo">
+
             <div class="team-item-info">
               <h3 class="team-title">Daniel Wilson</h3>
               <p class="team-text">UI Designer</p>
@@ -380,14 +404,14 @@
             <div class="portfolio-image">
               <picture>
                 <source media="(min-width: 1158px)" srcset=" 
-                              ./images/our-portfolio/descktop/cashless-payment-des@1x.jpg,
-                              ./images/our-portfolio/descktop/cashless-payment-des@2x.jpg" />
+                ./images/our-portfolio/descktop/cashless-payment-des@1x.jpg,
+                ./images/our-portfolio/descktop/cashless-payment-des@2x.jpg" />
                 <source media="(min-width: 768px)" srcset=" 
-                              ./images/our-portfolio/tablet/cashless-payment-tab@1x.jpg 1x,
-                              ./images/our-portfolio/tablet/cashless-payment-tab@2x.jpg 2x" />
+                ./images/our-portfolio/tablet/cashless-payment-tab@1x.jpg 1x,
+                ./images/our-portfolio/tablet/cashless-payment-tab@2x.jpg 2x" />
                 <source media="(max-width: 767px)" srcset="
-                              ./images/our-portfolio/mobile/cashless-paymentmob-@1x.jpg 1x,
-                              ./images/our-portfolio/mobile/cashless-paymentmob-@2x.jpg 2x" />
+                ./images/our-portfolio/mobile/cashless-paymentmob-@1x.jpg 1x,
+                ./images/our-portfolio/mobile/cashless-paymentmob-@2x.jpg 2x" />
                 <img src="./images/our-portfolio/mobile/cashless-paymentmob-@1x.jpg" alt="screenshot-of-banking-app" />
               </picture>
               <p class="hover-text">
@@ -406,14 +430,14 @@
               <div class="portfolio-image">
                 <picture>
                   <source media="(min-width: 1158px)" srcset=" 
-                                            ./images/our-portfolio/descktop/meditation-app-des@1x.jpg 1x,
-                                            ./images/our-portfolio/descktop/meditation-app-des@2x.jpg 2x" />
+                  ./images/our-portfolio/descktop/meditation-app-des@1x.jpg 1x,
+                  ./images/our-portfolio/descktop/meditation-app-des@2x.jpg 2x" />
                   <source media="(min-width: 768px)" srcset=" 
-                                            ./images/our-portfolio/tablet/meditation-app-tab@1x.jpg 1x,
-                                            ./images/our-portfolio/tablet/meditation-app-tab@2x.jpg 2x" />
+                  ./images/our-portfolio/tablet/meditation-app-tab@1x.jpg 1x,
+                  ./images/our-portfolio/tablet/meditation-app-tab@2x.jpg 2x" />
                   <source media="(max-width: 767px)" srcset="
-                                            ./images/our-portfolio/mobile/meditation-appmob-@1x.jpg 1x,
-                                            ./images/our-portfolio/mobile/meditation-appmob-@2x.jpg 2x" />
+                  ./images/our-portfolio/mobile/meditation-appmob-@1x.jpg 1x,
+                  ./images/our-portfolio/mobile/meditation-appmob-@2x.jpg 2x" />
                   <img src="./images/our-portfolio/mobile/meditation-appmob-@1x.jpg" alt="screenshot-of-banking-app" />
                 </picture>
                 <p class="hover-text">
@@ -430,16 +454,15 @@
           <li class="portfolio-item">
             <div class="portfolio-image">
               <picture>
-                <source media="(min-width: 1158px)"
-                  srcset=" 
-                                                          ./images/our-portfolio/descktop/taxi-service-des@1x.jpg 1x,
-                                                          ./images/our-portfolio/descktop/taxi-service-des@2x.jpg 2x" />
+                <source media="(min-width: 1158px)" srcset=" 
+                ./images/our-portfolio/descktop/taxi-service-des@1x.jpg 1x,
+                ./images/our-portfolio/descktop/taxi-service-des@2x.jpg 2x" />
                 <source media="(min-width: 768px)" srcset=" 
-                                                          ./images/our-portfolio/tablet/taxi-service-tab@1x.jpg 1x,
-                                                          ./images/our-portfolio/tablet/taxi-service-tab@2x.jpg 2x" />
+                ./images/our-portfolio/tablet/taxi-service-tab@1x.jpg 1x,
+                ./images/our-portfolio/tablet/taxi-service-tab@2x.jpg 2x" />
                 <source media="(max-width: 767px)" srcset="
-                                                          ./images/our-portfolio/mobile/taxi-servicemob-@1x.jpg 1x,
-                                                          ./images/our-portfolio/mobile/taxi-servicemob-@2x.jpg 2x" />
+                ./images/our-portfolio/mobile/taxi-servicemob-@1x.jpg 1x,
+                ./images/our-portfolio/mobile/taxi-servicemob-@2x.jpg 2x" />
                 <img src="./images/our-portfolio/mobile/taxi-servicemob-@1x.jpg" alt="phone-with-map-in-car" />
               </picture>
 
@@ -484,14 +507,14 @@
             <div class="portfolio-image">
               <picture>
                 <source media="(min-width: 1158px)" srcset=" 
-                              ./images/our-portfolio/descktop/online-courses-des@1x.jpg 1x,
-                              ./images/our-portfolio/descktop/online-courses-des@2x.jpg 2x" />
+                ./images/our-portfolio/descktop/online-courses-des@1x.jpg 1x,
+                ./images/our-portfolio/descktop/online-courses-des@2x.jpg 2x" />
                 <source media="(min-width: 768px)" srcset=" 
-                              ./images/our-portfolio/tablet/online-courses-tab@1x.jpg 1x,
-                              ./images/our-portfolio/tablet/online-courses-tab@2x.jpg 2x" />
+                ./images/our-portfolio/tablet/online-courses-tab@1x.jpg 1x,
+                ./images/our-portfolio/tablet/online-courses-tab@2x.jpg 2x" />
                 <source media="(max-width: 767px)" srcset="
-                              ./images/our-portfolio/mobile/online-coursesmob-@1x.jpg 1x,
-                              ./images/our-portfolio/mobile/online-coursesmob-@2x.jpg 2x" />
+                ./images/our-portfolio/mobile/online-coursesmob-@1x.jpg 1x,
+                ./images/our-portfolio/mobile/online-coursesmob-@2x.jpg 2x" />
                 <img src="./images/our-portfolio/descktop/online-courses-des@1x.jpg" alt="girl with headphones" />
               </picture>
 
