@@ -406,8 +406,6 @@ p {
 }
 
 .principles-icon {
-  width: 64;
-  height: 64;
   display: none;
 }
 
@@ -449,9 +447,39 @@ p {
 }
 
 @media screen and (min-width: 1157px) {
-  .social-link-box {
-    justify-content: space-between
+  .iconbox-principles {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    padding: 24px 100px;
+    margin-bottom: 8px;
+    background-color: #f4f4fd;
   }
+
+  .principles-icon {
+    display: flex;
+    width: 64;
+    height: 64;
+  }
+
+  .principles-item {
+    width: calc((100% - 24px * 3) / 4);
+
+  }
+
+  .principles-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+  }
+
 }
 
 
